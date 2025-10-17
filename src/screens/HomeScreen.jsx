@@ -68,7 +68,7 @@ const HomeScreen = ({ navigation }) => {
       }
     >
       <View style={{ gap: 10 }}>
-        <Text style={styles.dateText}>17 OCt 2025</Text>
+        <Text style={[styles.dateText, { color: 'white' }]}>{new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</Text>
         <Text style={styles.locationText}>
           Armenia,
           <Text style={styles.dateText}> Yerevan</Text>
